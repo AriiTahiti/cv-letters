@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 2.0 (September 17, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors: Fanchao Chen
+% (chenfc@fudan.edu.cn)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.3\textwidth]{openzeppelin.png} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+	Arii Sichoix \\
+	Montreal, Quebec \\ % Address
+	Canada \\
+	Phone: (438) 396-7541 \\
+	Email: arii.sichoix@gmail.com
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{@{} l}
+	
+	Openzeppelin\\
+	\\ 
+	Re: Full Stack Ethereum Developer \\
+	
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+To whom it may concern,
+
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+
+I am an admirer of Openzeppelin, as a leader in cybersecurity that offers the most trusted open-source library 
+that helps blockchain developers to build decentralized applications. This inspires me to join a team that helps 
+the entire blockchain community to learn, innovate, and create a highly engaging environment.
+
+It is with great interest that I submit my résumé for the Full Stack Ethereum Developer position with
+Openzeppelin. I have had a variety of personal project that has provided me an expertise and knowledge about 
+Smart Contract Development and Testing, Vulnerability Checking, and Front End integration. In the past 6 months,
+I have built several Decentralized Applications including an NFT Marketplace, and an Off-Chain Voting
+platform for my personal project, LennyVerse. Moreover, I was able to create a smart contract called "Community 
+IDO, which helps developers to launch a decentralized project safely by controlling the liquidity released 
+through time. I am a rigorous person that continues to expand my knowledge and always has a passion for 
+learning. For this reason, I have self-taught myself several skills such as, the famous vulnerabilities that 
+smart contracts could face and how to overcome problems with the help of Slither and MythX.
+
+As a junior Data Scientist at the Development Bank of Canada, I learned how to communicate with all the members
+of a team and make sure that each one of them understands the technology we are developing. Also during my 
+experience at BDC, I participated into the development of several Machine and Deep Learning models and created 
+the production pipeline to served them. I also was a teacher assistant for the class Advanced Topics in 
+Information Systems in the MMA program at McGill, and this experience improved my capability to share my 
+knowledge on complex topics.
+
+I am confident that you will find me to be an exceptional and enthusiastic member of your team. I am eager to 
+meet with you and discuss my achievements and how I can benefit your company and the entire blockchain 
+industry. Please do not hesitate to contact me. Your consideration and response are very much appreciated.
+ 
+\bigskip % Vertical whitespace
+
+Sincerely,
+
+\vspace{50pt} % Vertical whitespace
+
+Arii Sichoix
+
+\end{document}
